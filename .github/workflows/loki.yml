@@ -55,7 +55,7 @@ jobs:
           git add -A
           git commit -m "docs: update"
           git remote add origin https://github.com/SanemG/design-docs.git
-          echo "machine github.com login sanemg password $GITHUB_TOKEN" > ~/.netrc
+          echo "machine github.com login sanemg password $MY_GITHUB_TOKEN" > ~/.netrc
           git push -u -f origin master
   release-docs:
     name: release app docs
